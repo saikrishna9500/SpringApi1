@@ -1,16 +1,18 @@
-package com.example.demo;
+package com.example.demo.basic;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class basicjava {
-	@RequestMapping("/hi")
-	@ResponseBody
-	public String welcome() {
-		return"hgjFjh";
-	}
 
+public class basic {
+	@RequestMapping("/hi")
+	@ResponseBody	
+	public String welcome()
+	{
+		return"Welcome to Rest API ";
+	}
+	
 
 }
